@@ -53,7 +53,7 @@ class FBeamer {
 
 	subscribe() {
 		request({
-			uri: 'https://graph.facebook.com/v2.6/me/subscribed_apps',
+			uri: 'https://graph.facebook.com/v3.1/me/subscribed_apps',
 			qs: {
 				access_token: this.PAGE_ACCESS_TOKEN
 			},
@@ -91,7 +91,7 @@ class FBeamer {
 		return new Promise((resolve, reject) => {
 			// Create an HTTP POST request
 			request({
-				uri: 'https://graph.facebook.com/v2.6/me/messages',
+				uri: 'https://graph.facebook.com/v3.1/me/messages',
 				qs: {
 					access_token: this.PAGE_ACCESS_TOKEN
 				},
